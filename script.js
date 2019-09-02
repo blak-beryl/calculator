@@ -79,7 +79,16 @@ function operator(sign){
 
     //EqualTo Function
     function compute() {
-        let input_num = document.getElementById("textarea");
+        let input_num = document.getElementById("textview");
         ans = Math.floor(+eval(input_num.value));
         document.getElementById('textview').value = "=" + ans;
+    }
+
+    function powerbtn(){
+        moyo=document.getElementById("power").value
+        switch(moyo){
+            case("OFF"):document.getElementById("power").value="ON"
+            break
+            case("ON"):document.getElementById("power").value="OFF"
+        }
     }
