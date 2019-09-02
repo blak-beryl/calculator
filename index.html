@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    
+    <title>Calculator</title>
+</head>
+<body>
+  <h1> CALCULATOR</h1>  
+    <div class="container">
+        <h1>BERYL'S WEB CALC</h1>
+        <form name="myForm">
+            <input type="text" name="textview" class="textview" disabled>
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="button operator gray" value="ON/OFF" onclick="insert">
+                </td> 
+                <td><input type="button" class="button operator gray" value="BS">
+                </td>
+                <td><input type="button" class="button operator gray" value="C">
+                </td> 
+                 <td><input type="button" class="button  symbol  gray" value="+">
+                </td>     
+            </tr>
+                <tr>
+                    <td><input type="button" class="button number blue" value="7"  onclick="insertNum(7)">
+                    </td> 
+                    <td><input type="button" class="button  number blue" value="8"  onclick="insertNum(8)">
+                    </td>
+                    <td><input type="button" class="button  number blue" value="9"  onclick="insertNum(9)">
+                    </td> 
+                     <td><input type="button" class="button  symbol  gray" value="-">
+                    </td>     
+                </tr>
+                <tr>
+                        <td><input type="button" class="button  number blue" value="4"  onclick="insertNum(4)">
+                        </td> 
+                        <td><input type="button" class="button  number blue" value="5"  onclick="insertNum(5)">
+                        </td>
+                        <td><input type="button" class="button  number blue" value="6"  onclick="insertNum(6)">
+                        </td> 
+                         <td><input type="button" class="button symbol gray" value="/">
+                        </td>     
+                    </tr>
+                    <tr>
+                            <td><input type="button" class="button  number blue" value="1"  onclick="insertNum(1)">
+                            </td> 
+                            <td><input type="button" class="button  number blue" value="2"  onclick="insertNum(2)">
+                            </td>
+                            <td><input type="button" class="button  number blue" value="3"  onclick="insertNum(3)">
+                            </td> 
+                             <td><input type="button" class="button symbol  gray" value="x">
+                            </td>     
+                        </tr>
+                        <tr>
+                                <td><input type="button" class="button  number blue" value="0" onclick="insertNum(0)">
+                                </td> 
+                                <td><input type="button" class="button  symbol  gray" value=".">
+                                </td>
+                                <td><input type="button" class="button  symbol  gray" value="%">
+                                </td> 
+                                 <td><input type="button" class="button symbol gray" value="=">
+                                </td>     
+                            </tr>
+        </table>
+       
+         </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

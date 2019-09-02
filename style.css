@@ -1,0 +1,53 @@
+body{
+   background-color:blueviolet 
+ }
+
+ .container{
+     position: absolute;
+     width: 350px;
+     height: 575px;
+     background-color: azure;
+     margin: 0 auto;
+     position: relative;
+     border-radius: 5px;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+     padding-top: 15px;
+  }
+
+  .button{
+    width: 75px;
+    height: 75px; 
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .textview{
+    width: 327px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    background-color: white;
+    
+  }
+
+  .number{
+    background-color: whitesmoke;
+    font-weight: bold;
+  }
+
+  .symbol{
+    background-color: whitesmoke;
+    font-weight:bold;
+  }
+
+  .gray:hover {
+    background-color: gray;
+  }
+
+  .blue:hover{
+    background-color: blue
+  }
+
+ 
