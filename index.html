@@ -13,57 +13,57 @@
     <div class="container">
         <h1>BERYL'S WEB CALC</h1>
         <form name="myForm">
-            <input type="text" name="textview" class="textview" disabled>
+            <input type="text" name="textview" id="textview" placeholder="0" readonly="readonly"/>
         </form>
         <table>
             <tr>
-                <td><input type="button" class="button operator gray" value="ON/OFF" onclick="insert">
+                <td><input type="button" class="button operator gray" value="ON/OFF" onclick="onandoff()"/>
                 </td> 
-                <td><input type="button" class="button operator gray" value="BS">
+                <td><input type="button" class="button operator gray" value="BS" onclick="backspace()"/>
                 </td>
-                <td><input type="button" class="button operator gray" value="C">
+                <td><input type="button" class="button operator gray" value="C"  onclick="clearnum()"/>
                 </td> 
-                 <td><input type="button" class="button  symbol  gray" value="+">
+                 <td><input type="button" class="button  symbol  gray" value="+"  onclick="operator('+')"/>
                 </td>     
             </tr>
                 <tr>
-                    <td><input type="button" class="button number blue" value="7"  onclick="insertNum(7)">
+                    <td><input type="button" class="button number blue" value="7"  onclick="getnum(7)"/>
                     </td> 
-                    <td><input type="button" class="button  number blue" value="8"  onclick="insertNum(8)">
+                    <td><input type="button" class="button  number blue" value="8"  onclick="getnum(8)"/>
                     </td>
-                    <td><input type="button" class="button  number blue" value="9"  onclick="insertNum(9)">
+                    <td><input type="button" class="button  number blue" value="9"  onclick="getnum(9)"/>
                     </td> 
-                     <td><input type="button" class="button  symbol  gray" value="-">
+                     <td><input type="button" class="button  symbol  gray" value="-"  onclick="operator('-')"/>
                     </td>     
                 </tr>
                 <tr>
-                        <td><input type="button" class="button  number blue" value="4"  onclick="insertNum(4)">
+                        <td><input type="button" class="button  number blue" value="4"  onclick="getnum(4)"/>
                         </td> 
-                        <td><input type="button" class="button  number blue" value="5"  onclick="insertNum(5)">
+                        <td><input type="button" class="button  number blue" value="5"  onclick="getnum(5)"/>
                         </td>
-                        <td><input type="button" class="button  number blue" value="6"  onclick="insertNum(6)">
+                        <td><input type="button" class="button  number blue" value="6"  onclick="getnum(6)"/>
                         </td> 
-                         <td><input type="button" class="button symbol gray" value="/">
+                         <td><input type="button" class="button symbol gray" value="&#247" onclick="operator('/')"/>
                         </td>     
                     </tr>
                     <tr>
-                            <td><input type="button" class="button  number blue" value="1"  onclick="insertNum(1)">
+                            <td><input type="button" class="button  number blue" value="1"  onclick="getnum(1)"/>
                             </td> 
-                            <td><input type="button" class="button  number blue" value="2"  onclick="insertNum(2)">
+                            <td><input type="button" class="button  number blue" value="2"  onclick="getnum(2)"/>
                             </td>
-                            <td><input type="button" class="button  number blue" value="3"  onclick="insertNum(3)">
+                            <td><input type="button" class="button  number blue" value="3"  onclick="getnum(3)"/>
                             </td> 
-                             <td><input type="button" class="button symbol  gray" value="x">
+                             <td><input type="button" class="button symbol  gray" value="x" onclick="operator('*')"/>
                             </td>     
                         </tr>
                         <tr>
-                                <td><input type="button" class="button  number blue" value="0" onclick="insertNum(0)">
+                                <td><input type="button" class="button  number blue" value="0" onclick="getnum(0)"/>
                                 </td> 
-                                <td><input type="button" class="button  symbol  gray" value=".">
+                                <td><input type="button" class="button  symbol  gray" value="." onclick="operator('.')"/>
                                 </td>
-                                <td><input type="button" class="button  symbol  gray" value="%">
+                                <td><input type="button" class="button  symbol  gray" value="%" onclick="operator('%')"/>
                                 </td> 
-                                 <td><input type="button" class="button symbol gray" value="=">
+                                 <td><input type="button" class="button symbol gray" value="=" onclick="compute('=')"/>
                                 </td>     
                             </tr>
         </table>

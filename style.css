@@ -4,12 +4,12 @@ body{
 
  .container{
      position: absolute;
-     width: 350px;
-     height: 575px;
-     background-color: azure;
+     width: 344px;
+     height: 580px;
+     background-color:red;
      margin: 0 auto;
      position: relative;
-     border-radius: 5px;
+     border-radius: 20px;
      box-shadow: 0 4px 8px 0 rgba(0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
      padding-top: 15px;
   }
@@ -17,19 +17,21 @@ body{
   .button{
     width: 75px;
     height: 75px; 
-    margin: 2px;
+    margin: 3px;
     cursor: pointer;
-    border: none;
+    border: 5px;
+    font-size: large;
   }
 
-  .textview{
-    width: 327px;
+  #textview{
+    width: 319px;
     margin: 5px;
     font-size: 25px;
     padding: 5px;
-    border: none;
+    border: 50px;
     background-color: white;
-    
+    height: 50px;
+    text-align: right;
   }
 
   .number{
